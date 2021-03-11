@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Oswald:wght@400;700&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -233,4 +234,159 @@ html {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+html {
+  font-size: 125%;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+a,
+.submitButton,
+nav .navLogo {
+  color: #171717;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+form,
+::-webkit-input-placeholder,
+p {
+  color: #171717;
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  letter-spacing: 0px;
+}
+
+form,
+:-ms-input-placeholder,
+p {
+  color: #171717;
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  letter-spacing: 0px;
+}
+
+form,
+::-ms-input-placeholder,
+p {
+  color: #171717;
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  letter-spacing: 0px;
+}
+
+form,
+::placeholder,
+p {
+  color: #171717;
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  letter-spacing: 0px;
+}
+
+nav.menu {
+  background-color: #b9dde7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav.menu li {
+  font-size: 1rem;
+  padding: 0 25px;
+}
+
+nav.menu p {
+  font-size: 2.1rem;
+  line-height: 2.1rem;
+  padding: 0 25px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+a:hover,
+a:focus {
+  color: #ffffff;
+}
+
+.button {
+  background-color: #f38d8d;
+}
+
+.botton:hover,
+.button:focus {
+  color: #ffffff;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1 {
+  color: #171717;
+  font-family: "Oswald", sans-serif;
+  font-size: 4rem;
+  line-height: 4.6rem;
+  text-align: center;
+}
+
+footer {
+  background-color: #171717;
+  padding: 5px 0;
+  margin: 0;
+}
+
+footer p {
+  color: #ffffff;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  padding: 0;
+  text-align: center;
 }
