@@ -251,7 +251,7 @@ h2,
 h3,
 h4,
 a,
-.submitButton,
+a.button,
 nav .navLogo {
   color: #171717;
   font-family: "Oswald", sans-serif;
@@ -260,6 +260,23 @@ nav .navLogo {
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 4.6rem;
+}
+
+h2 {
+  font-size: 2.1rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.2rem;
 }
 
 form,
@@ -355,26 +372,245 @@ a:focus {
   color: #ffffff;
 }
 
-.button {
+a.button {
+  display: inline-block;
+  color: #f38d8d;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  background-color: #171717;
+  padding: 10px 30px;
+}
+
+a.button:hover,
+a.button:focus {
+  color: #ffffff;
   background-color: #f38d8d;
 }
 
-.botton:hover,
-.button:focus {
-  color: #ffffff;
+img {
+  width: 100%;
+  display: block;
 }
 
-img {
-  display: block;
+header.homePage {
+  height: 100vh;
+  background-color: #b9dde7;
+}
+
+header.homePage div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header.homePage div .heroImage {
+  width: 35%;
+  -webkit-box-shadow: 20px 20px 0 #ffffff;
+          box-shadow: 20px 20px 0 #ffffff;
+  position: relative;
+  top: 60px;
+}
+
+div.banner {
+  position: relative;
+  margin: 0 auto;
+}
+
+div.banner h1 {
+  font-size: 7rem;
+  line-height: 7rem;
+  text-align: center;
+}
+
+div.banner img {
+  position: absolute;
+  width: 35%;
+  right: -10%;
+  top: -40%;
+}
+
+section.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-color: #f6f6f6;
+}
+
+section.about .aboutWho {
+  width: 50%;
+  padding: 100px 0;
+  margin-right: calc(15% / 2);
+}
+
+section.about img {
   width: 100%;
 }
 
-h1 {
+section.about .aboutInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 60px 0 100px;
+}
+
+section.about .aboutInfo .textContainer {
+  width: 50%;
+  padding: 40px 0 0 80px;
+}
+
+.aboutInfo .textContainer {
+  position: relative;
+}
+
+.aboutInfo .textContainer div {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #b9dde7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 35px;
+  left: 25px;
+}
+
+.aboutInfo .textContainer div i {
   color: #171717;
-  font-family: "Oswald", sans-serif;
-  font-size: 4rem;
-  line-height: 4.6rem;
-  text-align: center;
+  font-size: 1.2rem;
+}
+
+section.blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+section.blog .blogTravels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.blog .blogTravels .imageContainer {
+  width: 50%;
+  position: relative;
+  top: -30px;
+}
+
+section.blog .blogTravels .textContainer {
+  width: 50%;
+  padding: 100px 0 40px 60px;
+}
+
+section.blog .blogFavThings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+section.blog .blogFavThings .imageContainer {
+  width: 50%;
+  position: relative;
+  top: 30px;
+}
+
+section.blog .blogFavThings .textContainer {
+  width: 50%;
+  padding: 40px 60px 100px 0;
+}
+
+section.blog .blogFavThings .textContainer a.button {
+  float: right;
+}
+
+.blogTravels .imageContainer img {
+  -webkit-box-shadow: 15px 15px 0 #68b0c1, -200px 15px 0 #68b0c1;
+          box-shadow: 15px 15px 0 #68b0c1, -200px 15px 0 #68b0c1;
+}
+
+.blogFavThings .imageContainer img {
+  -webkit-box-shadow: 15px 15px 0 #b9dde7, 200px 15px 0 #b9dde7;
+          box-shadow: 15px 15px 0 #b9dde7, 200px 15px 0 #b9dde7;
+}
+
+section.journey {
+  padding: 120px 0 100px;
+  background-color: #f6f6f6;
+}
+
+section.journey div.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.journey div.wrapper .imageContainer {
+  width: 30%;
+}
+
+section.journey div.wrapper .textContainer {
+  width: 70%;
+  padding-left: 100px;
+}
+
+section.journey img {
+  -webkit-box-shadow: 20px 20px 0 #227284;
+          box-shadow: 20px 20px 0 #227284;
+}
+
+ul.galleryList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 80px 0;
+}
+
+ul.galleryList li {
+  width: 30%;
+}
+
+ul.galleryList li img {
+  width: 100%;
 }
 
 footer {
@@ -388,5 +624,6 @@ footer p {
   font-size: 0.9rem;
   line-height: 1rem;
   padding: 0;
+  margin: 0;
   text-align: center;
 }

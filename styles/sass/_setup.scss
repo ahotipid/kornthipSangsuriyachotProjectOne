@@ -8,7 +8,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
  
-// general styles
+// base style
 html {
     font-size: 125%;
 }
@@ -24,7 +24,7 @@ h2,
 h3,
 h4,
 a,
-.submitButton,
+a.button,
 nav .navLogo {
     color: $black;
     font-family: $headerFont;
@@ -33,6 +33,23 @@ nav .navLogo {
     text-transform: uppercase;
     padding: 0;
     margin: 0;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 4.6rem;
+}
+
+h2 {
+    font-size: 2.1rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.2rem;
 }
 
 form,
@@ -82,19 +99,28 @@ a:focus {
     color: $white;
 }
 
-.button {
+a.button {
+    display: inline-block;
+    color: $accent;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    background-color: $black;
+    padding: 10px 30px;
+}
+
+a.button:hover,
+a.button:focus {
+    color: $white;
     background-color: $accent;
 }
 
-.botton:hover,
-.button:focus {
-    color: $white;
+img {
+    width: 100%;
+    display: block;
+   
 }
 
-img {
-    display: block;
-    width: 100%;
-}
+
 
 
 

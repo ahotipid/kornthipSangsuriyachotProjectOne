@@ -1,7 +1,196 @@
-h1 {
-    color: $black;
-    font-family: $headerFont;
-    font-size: 4rem;
-    line-height: 4.6rem;
-    text-align: center;
+// header style
+header.homePage {
+    height:100vh;
+    background-color: $primary3;
+    div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .heroImage {
+            width:35%;
+            box-shadow: 20px 20px 0 $white;
+            position: relative;
+            top: 60px;
+        }
+    }
+}
+div.banner{
+    position: relative;
+    margin: 0 auto;
+
+    h1 {
+        font-size: 7rem;
+        line-height: 7rem;
+        text-align: center;
+    }
+
+    img{
+        position: absolute;
+        width: 35%;
+        right: -10%;
+        top: -40%;
+    }
+}
+
+
+
+// section about styles
+section.about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: $primary4;
+
+    .aboutWho {
+        width: 50%;
+        padding: 100px 0;
+        margin-right: calc(15% / 2);
+
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .aboutInfo{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 60px 0 100px;
+
+        .textContainer{
+            width: 50%;
+            padding: 40px 0 0 80px;
+        }
+    }
+}
+
+.aboutInfo .textContainer {
+    position: relative;
+
+    div {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: $primary3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 35px;
+        left: 25px;
+
+        i {
+            color: $black;
+            font-size: 1.2rem;
+            
+        }
+
+    }
+        
+}
+
+
+
+// section blog style
+section.blog {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .blogTravels {
+        display: flex;
+        
+        .imageContainer {
+            width: 50%;
+            position: relative;
+            top: -30px;
+        }
+
+        .textContainer {
+            width: 50%;
+            padding: 100px 0 40px 60px;
+        }
+
+    }
+
+    .blogFavThings {
+        display: flex;
+        flex-direction: row-reverse ;
+
+        .imageContainer {
+            width: 50%;
+            position: relative;
+            top: 30px;
+            
+        }
+        
+        .textContainer {
+            width: 50%;
+            padding: 40px 60px 100px 0;
+
+            a.button {
+                float :right;
+            }
+        }
+
+    }
+}
+
+
+.blogTravels {
+    .imageContainer {
+        img {
+            box-shadow: 15px 15px 0 $primary2, -200px 15px 0 $primary2;
+        }
+    }
+}
+
+.blogFavThings {
+    .imageContainer {
+        img {
+            box-shadow: 15px 15px 0 $primary3 , 200px 15px 0 $primary3;
+        }
+    }
+}
+
+//section journey styles
+section.journey {
+    padding: 120px 0 100px;
+    background-color: $primary4;
+
+    div.wrapper{
+        display: flex;
+        flex-wrap: wrap;
+
+        .imageContainer {
+            width: 30%;
+            
+        }
+
+        .textContainer {
+            width: 70%;
+            padding-left: 100px;
+        }
+    }
+}
+section.journey img {
+    box-shadow: 20px 20px 0 $primary1;
+}
+
+// section gallery style
+ul.galleryList{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 80px 0;
+
+    li {
+        width: 30%;
+            
+        img{
+            width: 100%;
+        }
+        
+    }
 }
