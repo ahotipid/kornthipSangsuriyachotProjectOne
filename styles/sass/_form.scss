@@ -19,7 +19,7 @@ form {
     input[type="text"],
     input[type="email"] {
         width: 49%;
-        min-width: 270px;
+        min-width: 250px;
         flex: 1 0 auto;
         margin-bottom: 10px;
     }
@@ -35,6 +35,8 @@ form {
     }
 
     textarea {
+        min-width: 250px;
+        flex: 1 0 100%;
         height: 350px;
         resize: none;
     } 
@@ -58,8 +60,3 @@ form {
 
 }
 
-@media (max-width: 980px) {
-    input[type="text"] {
-        margin-right: 0px;
-    }
-}

@@ -2,13 +2,14 @@
 header.homePage {
     height:100vh;
     background-color: $primary3;
-    div {
+    div.wrapper {
         display: flex;
         justify-content: flex-start;
         align-items: center;
 
         .heroImage {
             width:35%;
+            min-width: 190px;
             box-shadow: 20px 20px 0 $white;
             position: relative;
             top: 60px;
@@ -20,8 +21,8 @@ div.banner{
     margin: 0 auto;
 
     h1 {
-        font-size: 7rem;
-        line-height: 7rem;
+        font-size: 6rem;
+        line-height: 6rem;
         text-align: center;
     }
 
@@ -39,14 +40,18 @@ div.banner{
 section.about {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     background-color: $primary4;
 
-    .aboutWho {
-        width: 50%;
-        padding: 100px 0;
-        margin-right: calc(15% / 2);
+    .wrapper {
+        display: flex;
+        justify-content: flex-end;
 
+        .aboutWho {
+            width: 50%;
+            padding: 100px 0;
+        }
+        
     }
 
     img {
@@ -82,21 +87,18 @@ section.about {
 
         i {
             color: $black;
-            font-size: 1.2rem;
-            
+            font-size: 1.2rem;  
         }
-
-    }
-        
+    }    
 }
 
 
 
-// section blog style
+// section blog styles//
 section.blog {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
 
     .blogTravels {
         display: flex;
@@ -111,7 +113,6 @@ section.blog {
             width: 50%;
             padding: 100px 0 40px 60px;
         }
-
     }
 
     .blogFavThings {
@@ -121,8 +122,7 @@ section.blog {
         .imageContainer {
             width: 50%;
             position: relative;
-            top: 30px;
-            
+            top: 30px;   
         }
         
         .textContainer {
@@ -133,7 +133,6 @@ section.blog {
                 float :right;
             }
         }
-
     }
 }
 
@@ -165,6 +164,7 @@ section.journey {
 
         .imageContainer {
             width: 30%;
+            min-width: 165px;
             
         }
 
@@ -191,6 +191,5 @@ ul.galleryList{
         img{
             width: 100%;
         }
-        
     }
 }

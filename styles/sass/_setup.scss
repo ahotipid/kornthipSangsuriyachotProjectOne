@@ -67,6 +67,7 @@ nav.menu {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
         li {
             font-size: 1rem;
             padding: 0 25px;
@@ -77,6 +78,14 @@ nav.menu {
             line-height: 2.1rem;
             padding: 0 25px;
             align-self: center;
+        }
+
+        i {
+            font-size: 1.5rem;
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            visibility: hidden;
         }
 }
 

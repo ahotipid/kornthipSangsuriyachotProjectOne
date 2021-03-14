@@ -1,0 +1,333 @@
+@media (max-width: 970px) {
+    // homepage header style
+    header.homePage {
+        div.wrapper {
+            height:90vh;
+    
+            .heroImage {
+                position: static;   
+            }
+        }
+    }
+
+    div.banner{
+    
+        h1 {
+            font-size: 5rem;
+            line-height: 5rem;
+        }
+    }
+
+    //blog page styles
+    div.blogPage {
+        .wrapper {
+            flex-direction: column-reverse;
+    
+            aside.blogPage {
+                width: 100%;
+                margin-top: 100px;
+                margin-right: 0px;
+                
+            }
+            main.blogPage {
+                width: 100%;
+            }
+        }
+    }
+
+    section.aboutHarper {
+        width: 100;
+        display: flex;
+
+        .imageContainer {
+            width: 25%;
+            min-width: 100px;
+            margin-bottom: 0;
+        }
+
+        .textContainer {
+            padding-left: 20px;
+        }
+    }
+
+    //form styles
+    form{
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+        }
+        
+        input[type="text"] {
+            margin-right: 0;
+        }
+    }
+    
+}
+
+@media (max-width: 800px) {
+    //section about style
+    section.about {
+
+        .wrapper{
+            .aboutWho {
+                width: 100%;
+                padding: 60px 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+    
+                p{
+                    text-align: center;
+                }
+            }
+        }      
+    }
+
+    //section blog styles
+    section.blog {
+        p {
+            text-align: center;
+        }
+    
+        .blogTravels {
+            flex-direction: column;
+            
+            .imageContainer {
+                width: 100%;
+                position: static;
+            }
+    
+            .textContainer {
+                width: 100%;
+                padding: 60px 0 60px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+    
+        }
+    
+        .blogFavThings {
+            flex-direction: column ;
+    
+            .imageContainer {
+                width: 100%;
+                position: static; 
+            }
+            
+            .textContainer {
+                width: 100%;
+                padding: 60px 0 60px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+                a.button {
+                    float : none;
+                }
+            }
+    
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .wrapper{
+        width: 95%;
+    }
+
+    //nav bar styles
+    nav.menu {
+            
+        li {
+            visibility: hidden;
+        }
+
+        p {
+            visibility: hidden;
+        }
+
+        i { 
+            visibility: visible;
+        }   
+    }
+    // homepage header 
+    header.homePage {
+        height:100vh;
+
+        div.wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+    
+            .heroImage {
+                box-shadow: 20px 20px 0 $white;
+                position: static;
+            }
+        }
+    }
+    //section about styles
+    section.about {
+
+        .aboutInfo{
+            flex-direction: column;
+            padding: 40px 0 60px;
+    
+            .textContainer{
+                width: 100%;
+                padding: 20px 0 0 60px;
+            }
+        }
+    }
+    .aboutInfo .textContainer {
+    
+        div {
+            top: 18px;
+            left: 5px;
+    
+            i {
+                color: $black;
+                font-size: 1.2rem;
+            }
+        }           
+    }
+
+    //section journey styles
+    section.journey {
+        padding: 100px 0 60px;
+
+        div.wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .imageContainer {
+                width: 60%;
+            }
+
+            .textContainer {
+                width: 100%;
+                padding-left: 0px;
+                padding-top: 60px;
+            }
+        }
+
+        .textContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+
+    // header blog page and contact page styles
+    header.blogPage,
+    header.contactPage {
+        height: 50vh;
+    }
+
+    header.blogPage h1,
+    header.contactPage h1 {
+        font-size: 2.8rem;
+        top: 32vh;
+        padding-left: 30px;
+    }
+
+    // contact page styles
+    main.contactPage {
+    
+        div.wrapper {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            
+            .contactInfo {
+                width: 100%;
+                margin-right: 0px;
+            }
+    
+            .contactForm {
+                width: 100%;
+            }
+        }
+    }
+
+    nav.socialMedia {
+        ul {
+            li {
+                flex: 0 1 60px;
+            }
+        }
+        
+        a {
+            padding: 2px;
+    
+            i {
+                color: $primary1;
+                font-size: 1.2rem;
+            }
+        }     
+    }
+}
+
+@media (max-width: 530px) {
+    h2 {
+        text-align: center;
+    }
+    // header home page styles
+    div.banner{
+        position: relative;
+        margin: 0 auto;
+    
+        h1 {
+            font-size: 3.5rem;
+            line-height: 3.5rem;
+            text-align: center;
+        }
+    
+        img{
+            position: absolute;
+            width: 35%;
+            right: -10%;
+            top: -40%;
+        }
+    }
+
+    // gallery section styles
+    ul.galleryList{
+        flex-direction: column;
+        padding: 80px 0 0;
+    
+        li {
+            width: 60%;
+            min-width: 250px;
+            margin-bottom: 60px;
+                
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    // section comment post style
+    section.commentPost {
+
+        .commentBox {
+            flex-direction: column;
+            justify-content: flex-start;
+
+            p {
+                width: 100%;
+                padding: 10px 0 0;
+            }
+        }
+    }
+}
+
+
+

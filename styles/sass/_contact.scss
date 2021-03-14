@@ -25,8 +25,10 @@ main.contactPage {
 
         .contactInfo {
             width: calc(30% - 25px);
+            min-width: 250px;
             padding: 40px 20px;
-            margin-right: 25px;
+            margin-right: 30px;
+            margin-bottom: 30px;
             background-color: $white;
             display: flex;
             flex-direction: column;
