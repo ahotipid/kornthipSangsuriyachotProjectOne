@@ -1,0 +1,78 @@
+// header  styles
+header.contactPage {
+    background:url(../assets/contact-image-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 65vh;
+    
+    h1 {
+        position: relative;
+        top: 46.5vh;
+    }
+}
+
+// main styles
+main.contactPage {
+    background-color: $primary4;
+    padding: 90px 0;
+
+    div.wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        
+
+        .contactInfo {
+            width: calc(30% - 25px);
+            padding: 40px 20px;
+            margin-right: 25px;
+            background-color: $white;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contactForm {
+            width: 70%;
+        }
+    }
+}
+
+section.contactInfo {
+    a.contactEmail {
+        padding: 5px 0 15px;
+    }
+    a.telephoneNumber,
+    address {
+        font-family: $bodyFont;
+        font-style: normal;
+        font-weight: 400;
+
+    }
+
+    a:hover,
+    a:focus {
+        color: $black;
+    }
+}
+nav.socialMedia {
+    ul {
+        display: flex;
+        justify-content: flex-start;
+
+        li {
+            flex: 0 1 25%;
+        }
+    }
+    
+    a {
+        padding: 2px;
+
+        i {
+            color: $primary1;
+            font-size: 1.2rem;
+        }
+    
+    }
+    
+}

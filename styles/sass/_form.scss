@@ -1,0 +1,65 @@
+form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    label {
+        display: none;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        border: 1px solid $white;
+        padding: 15px;
+        font-family: $bodyFont;
+        font-size: 1rem;      
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        width: 49%;
+        min-width: 270px;
+        flex: 1 0 auto;
+        margin-bottom: 10px;
+    }
+
+    input[type="text"] {
+        margin-right: 10px;
+    }
+
+    textarea,
+    input[type="submit"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    textarea {
+        height: 350px;
+        resize: none;
+    } 
+
+    .submitButton {
+        color: $accent;
+        font-family: $headerFont;
+        text-transform: uppercase;
+        font-size: 1rem;
+        line-height: 1.6rem;
+        background-color: $black;
+        border: none;
+        padding: 10px 30px;
+    }
+
+    .submitButton:hover,
+    .submitButton:focus {
+        color: $white;
+        background-color: $accent;
+    }
+
+}
+
+@media (max-width: 980px) {
+    input[type="text"] {
+        margin-right: 0px;
+    }
+}

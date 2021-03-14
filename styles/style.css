@@ -280,40 +280,6 @@ h4 {
 }
 
 form,
-::-webkit-input-placeholder,
-p {
-  color: #171717;
-  font-family: "Cabin", sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.6rem;
-  letter-spacing: 0px;
-}
-
-form,
-:-ms-input-placeholder,
-p {
-  color: #171717;
-  font-family: "Cabin", sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.6rem;
-  letter-spacing: 0px;
-}
-
-form,
-::-ms-input-placeholder,
-p {
-  color: #171717;
-  font-family: "Cabin", sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.6rem;
-  letter-spacing: 0px;
-}
-
-form,
-::placeholder,
 p {
   color: #171717;
   font-family: "Cabin", sans-serif;
@@ -611,6 +577,265 @@ ul.galleryList li {
 
 ul.galleryList li img {
   width: 100%;
+}
+
+header.blogPage {
+  background: url(../assets/blog-image-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 65vh;
+}
+
+header.blogPage h1 {
+  position: relative;
+  top: 46.5vh;
+}
+
+div.blogPage {
+  background-color: #f6f6f6;
+  padding: 100px 0;
+}
+
+div.blogPage .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.blogPage .wrapper aside.blogPage {
+  width: calc(30% - 30px);
+  margin-right: 30px;
+}
+
+div.blogPage .wrapper main.blogPage {
+  width: 70%;
+}
+
+aside.blogPage section {
+  background-color: #ffffff;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+section.aboutHarper img {
+  margin-bottom: 20px;
+}
+
+section.recentPost ul {
+  list-style-type: disc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.recentPost ul a {
+  text-transform: none;
+  font-family: "Cabin", sans-serif;
+  font-size: 1rem;
+  color: #171717;
+  font-weight: 400;
+  line-height: 1.6rem;
+  letter-spacing: 0px;
+}
+
+main.blogPage section {
+  margin-bottom: 30px;
+  border-bottom: 5px solid #227284;
+}
+
+section.blogPost {
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+section.commentPost .commentBox {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+  margin-bottom: 15px;
+}
+
+section.commentPost .commentBox div.imageContainer {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+}
+
+section.commentPost .commentBox p {
+  width: 80%;
+  padding: 0 0 0 30px;
+  margin: 0;
+}
+
+section.commentPost .commentBox:last-child {
+  margin-bottom: 0;
+}
+
+header.contactPage {
+  background: url(../assets/contact-image-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 65vh;
+}
+
+header.contactPage h1 {
+  position: relative;
+  top: 46.5vh;
+}
+
+main.contactPage {
+  background-color: #f6f6f6;
+  padding: 90px 0;
+}
+
+main.contactPage div.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+main.contactPage div.wrapper .contactInfo {
+  width: calc(30% - 25px);
+  padding: 40px 20px;
+  margin-right: 25px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main.contactPage div.wrapper .contactForm {
+  width: 70%;
+}
+
+section.contactInfo a.contactEmail {
+  padding: 5px 0 15px;
+}
+
+section.contactInfo a.telephoneNumber,
+section.contactInfo address {
+  font-family: "Cabin", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+section.contactInfo a:hover,
+section.contactInfo a:focus {
+  color: #171717;
+}
+
+nav.socialMedia ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+nav.socialMedia ul li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+}
+
+nav.socialMedia a {
+  padding: 2px;
+}
+
+nav.socialMedia a i {
+  color: #227284;
+  font-size: 1.2rem;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+form label {
+  display: none;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  border: 1px solid #ffffff;
+  padding: 15px;
+  font-family: "Cabin", sans-serif;
+  font-size: 1rem;
+}
+
+form input[type="text"],
+form input[type="email"] {
+  width: 49%;
+  min-width: 270px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  margin-bottom: 10px;
+}
+
+form input[type="text"] {
+  margin-right: 10px;
+}
+
+form textarea,
+form input[type="submit"] {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form textarea {
+  height: 350px;
+  resize: none;
+}
+
+form .submitButton {
+  color: #f38d8d;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  background-color: #171717;
+  border: none;
+  padding: 10px 30px;
+}
+
+form .submitButton:hover,
+form .submitButton:focus {
+  color: #ffffff;
+  background-color: #f38d8d;
+}
+
+@media (max-width: 980px) {
+  input[type="text"] {
+    margin-right: 0px;
+  }
 }
 
 footer {

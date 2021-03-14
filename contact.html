@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/47d553d144.js" crossorigin="anonymous"></script>
     <title>Harper</title>
 </head>
 <body>
-    <header>
+    <header class="contactPage">
         <nav class="menu">
             <ul>
                 <li><a href="./index.html">Home</a></li>
@@ -18,16 +19,28 @@
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
-        <h1>Contact me</h1>
+        <div class="wrapper">
+            <h1>Contact me</h1>
+        </div>
+        
     </header>
-    <main>
-        <div class="contactInfo">
+    <main class="contactPage">
+        <div class="wrapper">
+        <section class="contactInfo">
             <nav class="socialMedia">
                 <ul>
-                    <li><a href="#" aria-label="go to Facebook">facebook</a></li>
-                    <li><a href="#"aria-label="go to Twitter">twitter</a></li>
-                    <li><a href="#" aria-label="go to LinkedIn">linkedIn</a></li>
-                    <li><a href="#" aria-label="go to Instagram">instagram</a></li>
+                    <li>
+                        <a href="#" aria-label="go to Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"aria-label="go to Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="go to LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="go to Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    </li>
                 </ul>
             </nav>
             <a href="mailto:#" class="contactEmail">info@email.com</a>
@@ -37,17 +50,18 @@
                 Toronto, Ontario<br>
                 M5V2D5
             </address>
-        </div>
-        <div class="contactForm">
+        </section>
+        <section class="contactForm">
             <form action="">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Name">
                 <label for="email">Email address</label>
                 <input type="email" id="email" name="email address" placeholder="Email address">
                 <label for="message">Message</label>
-                <input type="textarea" id="message" name="message" placeholder="Message">
+                <textarea id="message" name="message" placeholder="Message"></textarea>
                 <input type="submit" class="button submitButton" value="submit">
             </form>
+        </section>
         </div>
     </main>
     <footer>

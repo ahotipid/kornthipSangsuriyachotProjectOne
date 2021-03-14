@@ -8,7 +8,7 @@
     <title>Harper</title>
 </head>
 <body>
-    <header>
+    <header class="blogPage">
         <nav class="menu">
             <ul>
                 <li><a href="./index.html">Home</a></li>
@@ -18,9 +18,14 @@
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
-        <h1>Blog</h1>
+        <div class="wrapper">
+            <h1>Blog</h1>
+        </div>
+        
     </header>
-    <aside>
+    <div class="blogPage">
+    <div class="wrapper">
+    <aside class="blogPage">
         <section class="aboutHarper">
             <img src="./assets/blog-image-2.jpg" alt="Harper wearing pink fur jacket lying on a carpet floor look up at her hand">
             <h4>About Harper</h4>
@@ -37,7 +42,7 @@
         </section>
 
     </aside>
-    <Main>
+    <Main class="blogPage">
         <section id="blogPost" class="blogPost">
             <h2>My favorite travel destinations</h2>
             <p>Monday October 8th, 2018 by Harper</p>
@@ -50,29 +55,35 @@
 
         </section>
         <section id="commentPost" class="commentPost">
-            <div>
-                <img src="./harper-designAndAssets/assets/blog-image-3.jpg" alt="headshot of a person with front bang and bob hair styles">
+            <div class="commentBox">
+                <div class="imageContainer">
+                    <img src="./assets/blog-image-3.jpg" alt="headshot of a person with front bang and bob hair styles">
+                </div>
+                
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugiat ad molestias quis nisi sequi, accusamus maiores. Culpa, ducimus exercitationem voluptatem labore atque, nostrum, corrupti laudantium vitae recusandae pariatur quisquam?</p>
             </div>
-            <div>
-                <img src="./harper-designAndAssets/assets/blog-image-4.jpg" alt="headshot of a person wearing a hat blowing a bubble with bubblegum">
+            <div class="commentBox">
+                <div class="imageContainer">
+                    <img src="./assets/blog-image-4.jpg" alt="headshot of a person wearing a hat blowing a bubble with bubblegum">
+                </div>
+                
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores inventore quo voluptatibus quis illum cum laudantium distinctio a reprehenderit quos.</p>
             </div>
         </section>
-        <section class="commentForm">
-            <form action="">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Name">
-                <label for="email">Email address</label>
-                <input type="email" id="email" name="email address" placeholder="Email address">
-                <label for="message">Message</label>
-                <input type="textarea" id="message" name="message" placeholder="Message">
-                <input type="submit" class="button submitButton" value="Post comment">
-            </form>
-        </section>
+        <form action="">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Name">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email address" placeholder="Email address">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Message"></textarea>
+            <input type="submit" class="button submitButton" value="Post comment">
+        </form>
         
-    
     </Main>
+    </div>     <!-- wrapper -->
+    </div>      <!-- blogPage to set background-->      
+    
     <footer>
         <p>Copyright @ 2021 Juno College</p>
     </footer>
