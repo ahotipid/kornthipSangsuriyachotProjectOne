@@ -240,6 +240,12 @@ html {
   font-size: 125%;
 }
 
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .wrapper {
   max-width: 1200px;
   width: 85%;
