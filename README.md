@@ -3,10 +3,12 @@ design guide
 https://docs.google.com/spreadsheets/d/1-YqdJShZCvvLR0t5vC2udjj78ctHCeacHJzHs9zaQLY/edit#gid=0
 
 Naming Convention - ID names and Class names should be in Camel case
+
 Commenting guidelines - Prefer comments on their own line. Avoid end-of-line comments
-Selectors	Column (seperate selectors by comma then new line)
+
+Selectors - Column style(seperate selectors by comma then new line)
 	- CSS Selectors should be in the same order as HTML elements
-  - Using SCSS style with the brackets (nested SCSS style)
+  	- Using SCSS style with the brackets (nested SCSS style)
 	- Do not nest more than 3 levels deep
 	- Use HEX color codes
 	- No ID's for styling
