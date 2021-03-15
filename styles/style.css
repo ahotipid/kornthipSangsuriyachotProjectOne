@@ -516,9 +516,14 @@ section.blog .blogTravels .imageContainer {
   top: -30px;
 }
 
+section.blog .blogTravels .imageContainer img {
+  -webkit-box-shadow: 15px 15px 0 #68b0c1, -110px 15px 0 #68b0c1;
+          box-shadow: 15px 15px 0 #68b0c1, -110px 15px 0 #68b0c1;
+}
+
 section.blog .blogTravels .textContainer {
   width: 50%;
-  padding: 100px 0 40px 60px;
+  padding: 80px 0 40px 60px;
 }
 
 section.blog .blogFavThings {
@@ -534,26 +539,21 @@ section.blog .blogFavThings {
 section.blog .blogFavThings .imageContainer {
   width: 50%;
   position: relative;
-  top: 30px;
+  top: 40px;
+}
+
+section.blog .blogFavThings .imageContainer img {
+  -webkit-box-shadow: 15px 15px 0 #b9dde7, 110px 15px 0 #b9dde7;
+          box-shadow: 15px 15px 0 #b9dde7, 110px 15px 0 #b9dde7;
 }
 
 section.blog .blogFavThings .textContainer {
   width: 50%;
-  padding: 40px 60px 100px 0;
+  padding: 40px 60px 80px 0;
 }
 
 section.blog .blogFavThings .textContainer a.button {
   float: right;
-}
-
-.blogTravels .imageContainer img {
-  -webkit-box-shadow: 15px 15px 0 #68b0c1, -200px 15px 0 #68b0c1;
-          box-shadow: 15px 15px 0 #68b0c1, -200px 15px 0 #68b0c1;
-}
-
-.blogFavThings .imageContainer img {
-  -webkit-box-shadow: 15px 15px 0 #b9dde7, 200px 15px 0 #b9dde7;
-          box-shadow: 15px 15px 0 #b9dde7, 200px 15px 0 #b9dde7;
 }
 
 section.journey {
