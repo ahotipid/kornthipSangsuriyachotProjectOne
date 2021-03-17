@@ -610,11 +610,12 @@ header.blogPage {
   background-size: cover;
   background-repeat: no-repeat;
   height: 65vh;
+  position: relative;
 }
 
 header.blogPage h1 {
-  position: relative;
-  top: 46.5vh;
+  position: absolute;
+  bottom: -43px;
 }
 
 div.blogPage {
@@ -714,11 +715,12 @@ header.contactPage {
   background-size: cover;
   background-repeat: no-repeat;
   height: 65vh;
+  position: relative;
 }
 
 header.contactPage h1 {
-  position: relative;
-  top: 46.5vh;
+  position: absolute;
+  bottom: -43px;
 }
 
 main.contactPage {
@@ -1107,7 +1109,6 @@ footer p {
   header.blogPage h1,
   header.contactPage h1 {
     font-size: 2.8rem;
-    top: 32vh;
     padding-left: 30px;
   }
   main.contactPage div.wrapper {

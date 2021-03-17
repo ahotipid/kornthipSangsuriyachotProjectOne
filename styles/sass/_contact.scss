@@ -5,10 +5,11 @@ header.contactPage {
     background-size: cover;
     background-repeat: no-repeat;
     height: 65vh;
+    position: relative;
     
     h1 {
-        position: relative;
-        top: 46.5vh;
+        position: absolute;
+        bottom: -43px;
     }
 }
 
