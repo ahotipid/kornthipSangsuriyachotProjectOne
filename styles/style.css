@@ -295,6 +295,18 @@ p {
   letter-spacing: 0px;
 }
 
+ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+  margin: 0;
+}
+
 nav.menu {
   background-color: #b9dde7;
   display: -webkit-box;
@@ -331,18 +343,6 @@ nav.menu i {
   visibility: hidden;
 }
 
-ul {
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 10px 0;
-  margin: 0;
-}
-
 a {
   text-decoration: none;
   font-size: 1rem;
@@ -364,7 +364,7 @@ a.button {
 
 a.button:hover,
 a.button:focus {
-  color: #ffffff;
+  color: #171717;
   background-color: #f38d8d;
 }
 
@@ -856,6 +856,8 @@ form textarea {
 form .submitButton {
   color: #f38d8d;
   font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
   text-transform: uppercase;
   font-size: 1rem;
   line-height: 1.6rem;
@@ -866,7 +868,7 @@ form .submitButton {
 
 form .submitButton:hover,
 form .submitButton:focus {
-  color: #ffffff;
+  color: #171717;
   background-color: #f38d8d;
 }
 
