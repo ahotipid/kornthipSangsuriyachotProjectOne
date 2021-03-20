@@ -309,6 +309,7 @@ ul {
 
 nav.menu {
   background-color: #b9dde7;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -337,6 +338,7 @@ nav.menu p {
 a {
   text-decoration: none;
   font-size: 1rem;
+  padding: 10px 15px;
 }
 
 a:hover,
@@ -379,11 +381,47 @@ nav.burgerMenu {
   visibility: hidden;
 }
 
-nav.burgerMenu i {
-  font-size: 1.5rem;
+nav.burgerMenu .burgerIcon {
   position: absolute;
-  right: 15px;
-  top: 15px;
+  right: 20px;
+  top: 20px;
+}
+
+nav.burgerMenu .burgerIcon .line {
+  width: 30px;
+  height: 5px;
+  background-color: #171717;
+  margin-bottom: 5px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+nav.burgerMenu .burgerIcon:hover,
+nav.burgerMenu .burgerIcon:focus {
+  cursor: pointer;
+}
+
+nav.burgerMenu .burgerIcon:hover .line,
+nav.burgerMenu .burgerIcon:focus .line {
+  background-color: #ffffff;
+}
+
+nav.burgerMenu .animateBurgerIcon .line1 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+}
+
+nav.burgerMenu .animateBurgerIcon .line2 {
+  display: none;
+}
+
+nav.burgerMenu .animateBurgerIcon .line3 {
+  -webkit-transform: rotate(-45deg) translate(-8px, 8px);
+          transform: rotate(-45deg) translate(-8px, 8px);
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
 }
 
 nav.burgerMenu ul {
@@ -401,8 +439,8 @@ nav.burgerMenu ul {
   padding: 0;
   height: 0;
   overflow: hidden;
-  -webkit-transition: all ease-out 0.5s;
-  transition: all ease-out 0.5s;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 nav.burgerMenu ul li {

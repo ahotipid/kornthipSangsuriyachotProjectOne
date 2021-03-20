@@ -68,6 +68,7 @@ ul {
 
 nav.menu {
     background-color: $primary3;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,6 +89,7 @@ nav.menu {
 a {
     text-decoration: none;
     font-size: 1rem;
+    padding: 10px 15px;
 }
 
 a:hover,

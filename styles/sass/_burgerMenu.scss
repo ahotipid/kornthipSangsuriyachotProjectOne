@@ -7,13 +7,47 @@ nav.burgerMenu {
     position: fixed;
     visibility: hidden;
 
-    i {
-    font-size: 1.5rem;
-    position: absolute;
-    right: 15px;
-    top: 15px;
+    .burgerIcon {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+
+        .line {
+            width: 30px;
+            height: 5px;
+            background-color: $black;
+            margin-bottom: 5px;
+            transition: all 0.3s linear;
+        }
+    }
+    
+    //hover and focus state of burger icon
+    .burgerIcon:hover,
+    .burgerIcon:focus {
+        cursor: pointer;
+
+        .line {
+            background-color: $white;
+        }    
     }
 
+    //rules to make burgerIcon transform to X icon
+    // this will work when js toggle class animateBurgerIcon to the burgerIcon
+    .animateBurgerIcon .line1 {
+        transform: rotate(45deg);
+        transform-origin: 0% 50%;
+    }
+
+    .animateBurgerIcon .line2 {
+        display: none;   
+    }
+    
+    .animateBurgerIcon .line3 {
+        transform: rotate(-45deg) translate(-8px,8px);
+        transform-origin: 0% 50%;
+    }
+    
+    //ul styles
     ul {
         background-color: $primary3Light;
         flex-direction: column;
@@ -22,16 +56,16 @@ nav.burgerMenu {
         padding: 0;
         height: 0;
         overflow: hidden;
-        transition: all ease-out 0.5s;
+        transition: all 0.8s ease-in-out;
 
         li {
             text-align: center;
             padding: 10px 25px;
-        }
+        }  
     }
 
+    //rule to make ul height become 100vh when toggle
     .addHeight {
         height: 100vh;
     }
-
 }
