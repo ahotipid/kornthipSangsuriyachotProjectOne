@@ -318,7 +318,6 @@ nav.menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
 nav.menu li {
@@ -333,14 +332,6 @@ nav.menu p {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-}
-
-nav.menu i {
-  font-size: 1.5rem;
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  visibility: hidden;
 }
 
 a {
@@ -373,9 +364,70 @@ img {
   display: block;
 }
 
+nav.burgerMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+  visibility: hidden;
+}
+
+nav.burgerMenu i {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+nav.burgerMenu ul {
+  background-color: #b9dde7cc;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all ease-out 0.5s;
+  transition: all ease-out 0.5s;
+}
+
+nav.burgerMenu ul li {
+  text-align: center;
+  padding: 10px 25px;
+}
+
+nav.burgerMenu .addHeight {
+  height: 100vh;
+}
+
 header.homePage {
   height: 100vh;
   background-color: #b9dde7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
 }
 
 header.homePage div.wrapper {
@@ -396,7 +448,7 @@ header.homePage div.wrapper .heroImage {
   -webkit-box-shadow: 20px 20px 0 #ffffff;
           box-shadow: 20px 20px 0 #ffffff;
   position: relative;
-  top: 60px;
+  bottom: -60px;
 }
 
 div.banner {
@@ -610,6 +662,16 @@ header.blogPage {
   background-size: cover;
   background-repeat: no-repeat;
   height: 65vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 
@@ -715,6 +777,16 @@ header.contactPage {
   background-size: cover;
   background-repeat: no-repeat;
   height: 65vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 
@@ -1022,7 +1094,7 @@ footer p {
   nav.menu p {
     visibility: hidden;
   }
-  nav.menu i {
+  nav.burgerMenu {
     visibility: visible;
   }
   header.homePage {
@@ -1036,8 +1108,9 @@ footer p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
