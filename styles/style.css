@@ -304,7 +304,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 0;
-  margin: 0;
+  margin: 0 auto;
 }
 
 nav.menu {
@@ -338,7 +338,6 @@ nav.menu p {
 a {
   text-decoration: none;
   font-size: 1rem;
-  padding: 10px 15px;
 }
 
 a:hover,
@@ -377,7 +376,6 @@ nav.burgerMenu {
   position: absolute;
   z-index: 1;
   width: 100%;
-  position: fixed;
   visibility: hidden;
 }
 
@@ -438,6 +436,7 @@ nav.burgerMenu ul {
           align-items: center;
   padding: 0;
   height: 0;
+  width: 100%;
   overflow: hidden;
   -webkit-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
