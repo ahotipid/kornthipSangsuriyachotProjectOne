@@ -130,6 +130,15 @@
     
         }
     }
+
+    // section gallery styles
+    ul.galleryList {
+        display: none;
+    }
+
+    div.carousel {
+        display: block;
+    }
 }
 
 @media (max-width: 680px) {
