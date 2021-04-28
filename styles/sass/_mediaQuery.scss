@@ -130,6 +130,15 @@
     
         }
     }
+
+    // section gallery styles
+    ul.galleryList {
+        display: none;
+    }
+
+    div.carousel {
+        display: block;
+    }
 }
 
 @media (max-width: 680px) {
@@ -146,11 +155,11 @@
 
         p {
             visibility: hidden;
-        }
-
-        i { 
-            visibility: visible;
-        }   
+        }  
+    }
+    //nav .burgerMenu styles
+    nav.burgerMenu {
+        visibility: visible;
     }
     // homepage header 
     header.homePage {
@@ -159,7 +168,7 @@
         div.wrapper {
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-evenly;
             align-items: center;
     
             .heroImage {

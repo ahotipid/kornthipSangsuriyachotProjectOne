@@ -5,6 +5,9 @@ header.blogPage {
     background-size: cover;
     background-repeat: no-repeat;
     height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
     
     h1 {

@@ -18,8 +18,24 @@
                 <li><a href="./blog.html">Blog</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
-            <a href="#" aria-label="menu"><i class="fas fa-bars" aria-hidden="true"></i></a>
         </nav>
+        <!-- burger menu starts, will be visible @media max-width:680px -->
+        <nav class="burgerMenu">
+            <!-- burger icon -->
+            <div class="burgerIcon" aria-label="Menu">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
+            <!-- burger icon ends-->
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html#about">About</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>   
+        </nav>
+        <!-- burger menu ends -->
         <div class="wrapper">
             <img class="heroImage"src="./assets/home-image-1.jpg" alt="headshot of a person surrounded by pastel colour balloons" class="headerImage">
             <div class="banner">
@@ -108,11 +124,36 @@
                     <img src="./assets/home-image-8.jpg" alt="cottoncandy-like pink cloud in blue sky">
                 </li>
             </ul>
+            <!-- carousel starts (will visible @media max-width:800px)-->
+            <div class="carousel">
+                <ul class="carouselList">
+                    <li class="carouselImage" id="lastClone">
+                        <img src="./assets/home-image-8.jpg" alt="cottoncandy-like pink cloud in blue sky">
+                    </li>
+                    <li class="carouselImage">
+                        <img src="./assets/home-image-6.jpg" alt="pink building with white windows and blue sky">
+                    </li>
+                    <li class="carouselImage">
+                        <img src="./assets/home-image-7.jpg" alt="an airplane flying through purple and blue couldy sky">
+                    </li>
+                    <li class="carouselImage">
+                        <img src="./assets/home-image-8.jpg" alt="cottoncandy-like pink cloud in blue sky">
+                    </li>
+                    <li class="carouselImage" id="firstClone">
+                        <img src="./assets/home-image-6.jpg" alt="pink building with white windows and blue sky">
+                    </li>   
+                </ul>
+                <i class="fas fa-chevron-circle-left previous"></i>
+                <i class="fas fa-chevron-circle-right next"></i>
+            </div>
+            <!-- carousel ends -->
         </section>
     </main>
     <footer>
         <p>Copyright @ 2021 Juno College</p>
     </footer>
     
+    <!-- script-->
+    <script src="./script.js"></script>
 </body>
 </html>

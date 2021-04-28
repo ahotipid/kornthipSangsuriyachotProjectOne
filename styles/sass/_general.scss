@@ -63,15 +63,15 @@ ul {
     display: flex;
     align-items: center;
     padding: 10px 0;
-    margin: 0;
+    margin: 0 auto;
 }
 
 nav.menu {
     background-color: $primary3;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     
     li {
         font-size: 1rem;
@@ -83,15 +83,7 @@ nav.menu {
         line-height: 2.1rem;
         padding: 0 25px;
         align-self: center;
-    }
-
-    i {
-        font-size: 1.5rem;
-        position: absolute;
-        top: 16px;
-        right: 16px;
-        visibility: hidden;
-    }
+    }   
 }
 
 a {
